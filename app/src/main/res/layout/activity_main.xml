@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newPage">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transition"
+            android:text="Transition"
+            android:onClick="activityTransition"/>
+        <Button
+            android:id="@+id/alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dialog"
+            android:layout_toRightOf="@+id/transition"
+            android:onClick="activityTransition"/>
+
+        <Button
+            android:id="@+id/token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Token"
+            android:layout_toRightOf="@+id/alert"
+            android:onClick="subcribeToken"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="firebase"
+            android:onClick="activityFirebase"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/token"
+            android:layout_toEndOf="@+id/token" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstRow"
+        android:layout_below="@+id/newPage"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/add"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/value"
+                android:hint="Enter Number"
+                android:layout_below="@+id/newPage"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/add"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/firstRow" />
+
+
+</RelativeLayout>

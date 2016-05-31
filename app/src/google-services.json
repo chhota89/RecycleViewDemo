@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "903534963344",
+    "firebase_url": "https://recycleview-demo.firebaseio.com",
+    "project_id": "recycleview-demo",
+    "storage_bucket": "recycleview-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903534963344:android:fb96a5face7e8981",
+        "android_client_info": {
+          "package_name": "com.bridgelabz.recycleviewdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903534963344-8vgfu1h82o7vh9rrhoagcg3qr98bhldn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bridgelabz.recycleviewdemo",
+            "certificate_hash": "0E3FE7F2704DF745AAB68E0F05FEE59DCE3CCA14"
+          }
+        },
+        {
+          "client_id": "903534963344-g8ee9ca4eb5bt5h5u66dmfgbmto31jla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwgRPXtD9teZ1rRRqHQ-r8ndh5W2wpilc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903534963344-g8ee9ca4eb5bt5h5u66dmfgbmto31jla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
