@@ -63,5 +63,7 @@ public class ActivityTransition1 extends AppCompatActivity {
     public void appInvite(View view){
 
     }
+    public void function(){
+    }
 
 }
